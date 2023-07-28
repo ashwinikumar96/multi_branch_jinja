@@ -4,3 +4,5 @@ from django.shortcuts import render
 
 def data_render(request):
     return render(request,'data_render.html',context={'name':'Ashwin', 'age':23})
+def jinja_operations(request):
+    return render(request,'jinja_operations.html',context={'a':1000, 'b': 5000, 'c': 200})
